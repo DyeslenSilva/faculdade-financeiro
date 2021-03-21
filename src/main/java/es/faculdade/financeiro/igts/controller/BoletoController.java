@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import es.faculdade.financeiro.igts.cobranca.GerandoBoleto;
 import es.faculdade.financeiro.igts.model.Boleto;
 import es.faculdade.financeiro.igts.repo.BoletoRepo;
+import reactor.core.publisher.Flux;
 
 @RestController
 @RequestMapping("/boletoAPI")
