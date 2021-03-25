@@ -19,6 +19,10 @@ public class CartaoCreditoPS {
 	private PrestacaoComponent prestacaoComponent;
 
 	private CreditCardBuilder toCreditCardBuilder(CartaoDeCredito cartaoDeCredito) {
-		
+		return new CreditCardBuilder()
+				.withBillingAddress(enderecoPS.toAddressBuilder(cartaoDeCredito.getEndereco()))
+				.withInstallment(prestacaoComponent.toInstallmentBuilder(cartaoDeCredito.getPrestacao()))
+				.withHolder(titularPS.toHolderBuilder(cartaoDeCredito.getTitular()));
 	}
+	
 }

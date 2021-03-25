@@ -1,6 +1,7 @@
 package es.faculdade.financeiro.igts.component.model;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 import lombok.Data;
@@ -13,6 +14,7 @@ public class Titular implements Serializable{
 	 */
 	private static final long serialVersionUID = -6993974530354231955L;
 
+	private Date dataDeAniversario;
 	
 	private String nome;
 	

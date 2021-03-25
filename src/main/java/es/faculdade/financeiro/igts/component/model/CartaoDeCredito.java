@@ -17,5 +17,9 @@ public class CartaoDeCredito implements Serializable {
 	
 	private Titular titular;
 	
+	private Endereco endereco;
+	 
+	private Prestacao prestacao;
+	
 	
 }
