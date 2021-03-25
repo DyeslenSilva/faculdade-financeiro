@@ -18,6 +18,7 @@ public class AlunoController {
 	@Autowired
 	private AlunoRepo alunoRepo;
 	
+	
 	@GetMapping("/alunos")
 	public Flux<Aluno> getAlunos(){
 		return alunoRepo.findAll();
@@ -27,6 +28,7 @@ public class AlunoController {
 	public Mono<Aluno> getAlunoPorId(@PathVariable Integer idAluno){
 		return alunoRepo.findById(idAluno);
 	}
-
+	
+	
 
 }
