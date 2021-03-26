@@ -13,6 +13,7 @@ public class RequisicaoPreAprovada implements Serializable {
 
 
 	private String carrega;
+	private String nome;
 	private String detalhes;
 	private BigDecimal percentualExtraPagamento;
 	private BigDecimal valorMaximoPercentualPagamento;

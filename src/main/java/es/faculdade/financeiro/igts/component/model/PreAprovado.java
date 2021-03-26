@@ -21,8 +21,8 @@ public class PreAprovado implements Serializable {/**
 	private Currency moeda;
 	private BigDecimal precoExtra;
 	private String referecia;
-	private RemessaPS remessaPS;
-	private RemetentePS remetentePS;
+	private Remessa remessa;
+	private Remetente remetente;
 	private RequisicaoPreAprovada requisicaoPreAprovada;
 	private Map<String, String> parametros = new HashMap<String, String>();
 	
